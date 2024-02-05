@@ -181,9 +181,10 @@ img
 .mine_message
 {
     
-    justify-content: flex-end;
+    align-self: flex-end;
     border-radius: 20px;
-    width: 50%;padding: 1em;
+    width: 50%;
+    padding: 1em;
     & > p
     {
         /* display: block; */
@@ -195,6 +196,9 @@ img
 {
     border-radius: 20px;
     padding: 1em;
+    width: 50%;
+    align-self: flex-start;
+    
 }
 
 
