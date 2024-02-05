@@ -12,6 +12,7 @@ body
     font-family: "Lato", sans-serif;
     background-image: linear-gradient( var(--zap-backgreen) 100px , var(--zap-backgrey) 0);
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
 img
@@ -22,9 +23,17 @@ img
 
 #main_app
 {
-    /* height: 90vh; */
+    height: 90vh;
     padding-top: 3em;
 }
+
+/* .enemy_list,
+.chat,
+.row,
+.chat_main
+{
+    height: 90vh;
+} */
 
 /* #endregion Common */
 
@@ -292,16 +301,6 @@ img
 
 
 /* #region RightApp */
-
-/* .enemy_list
-{
-    flex-basis: 40%;
-}
-
-.chat
-{
-    flex-basis: 60%;
-} */
 
 .chat_header
 {
