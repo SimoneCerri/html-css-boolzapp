@@ -180,9 +180,15 @@ img
 
 .mine_message
 {
-    border-radius: 20px;
-    padding: 1em;
+    
     justify-content: flex-end;
+    border-radius: 20px;
+    width: 50%;padding: 1em;
+    & > p
+    {
+        /* display: block; */
+          
+    }
 }
 
 .enemy_message
