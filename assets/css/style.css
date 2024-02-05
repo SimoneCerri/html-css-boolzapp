@@ -23,7 +23,7 @@ img
 
 #main_app
 {
-    height: 90vh;
+    /* height: 90vh; */
     padding-top: 3em;
 }
 
@@ -38,10 +38,21 @@ img
 .chat,
 .enemy_list
 {
-    max-height: 600px;
+    max-height: 60vh;
     overflow: scroll;
 }
 
+.chat_main
+{
+    height: 90vh;
+}
+
+.mine_contact,
+.chat_header
+{
+    /* position: fixed; */
+    /* width: fit-content; */
+}
 
 /* #endregion Common */
 
@@ -196,6 +207,8 @@ img
         {
             .mine_contact
             {
+                /* position: fixed; */
+                /* width: ((100% / 12) * 4); */
                 align-items: center;
                 justify-content: space-between;
                 background-color: var(--zap-primarygrey);
