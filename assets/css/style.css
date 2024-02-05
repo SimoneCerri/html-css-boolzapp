@@ -20,6 +20,11 @@ img
     object-fit: cover;
 }
 
+#main_app
+{
+    padding-top: 3em;
+}
+
 /* #endregion Common */
 
 
@@ -170,6 +175,8 @@ img
             {
                 align-items: center;
                 justify-content: space-between;
+                background-color: var(--zap-primarygrey);
+                padding: 0.5em 1em;
                 .contact_img
                 {
                     
@@ -177,8 +184,39 @@ img
                 img
                 {
                 border-radius: 50%;
-                max-width: 100px;
+                max-width: 3.5em;
                 } 
+            }
+            .mine_contact_info
+            {
+                color: var(--zap-secondarygrey);
+                font-size: 1.5em;
+                & i
+                {
+                    padding: 0.5em;
+                }
+            }
+            .notify
+            {
+                background-color: var(--zap-notify);
+                padding: 0.5em 1em;
+                .notify_img
+                {
+                    font-size: 1.5em;
+                    background-color: var(--zap-lighter);
+                    border-radius: 30px;
+                    padding: 0.5em;
+                    color: var(--zap-notify);
+                }
+                .notify_info
+                {
+                    padding: 0.5em;
+                    & span 
+                    {
+                        text-decoration: underline;
+                        color: rgb(83, 82, 82);
+                    }
+                }
             }
         }
     }
@@ -189,7 +227,7 @@ img
 
 /* #region RightApp */
 
-.enemy_list
+/* .enemy_list
 {
     flex-basis: 40%;
 }
@@ -197,7 +235,7 @@ img
 .chat
 {
     flex-basis: 60%;
-}
+} */
 
 .chat_main
 {
@@ -244,6 +282,16 @@ img
         width: 100%;
     }
 
+    .col_11_m
+    {
+        width: 95%;
+    }
+
+    .col_1_m
+    {
+        width: 5%;
+    }
+
     body
     {
         background-image: none;
@@ -258,7 +306,8 @@ img
     {
         /* margin: 0;
         box-sizing: border-box; */
-        .contact_info,
+        padding: 0;
+        .mine_contact_info,
         .notify,
         .notify_info,
         .search_bar,
