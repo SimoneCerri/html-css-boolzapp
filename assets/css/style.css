@@ -22,6 +22,7 @@ img
 
 #main_app
 {
+    /* height: 90vh; */
     padding-top: 3em;
 }
 
@@ -182,6 +183,7 @@ img
                 justify-content: space-between;
                 background-color: var(--zap-primarygrey);
                 padding: 0.5em 1em;
+                height: 6vh;
                 .contact_img
                 {
                     
@@ -307,8 +309,10 @@ img
 .chat_header
 {
     justify-content: space-between;
+    align-items: center;
     padding: 0.5em 1em;
     background-color: var(--zap-primarygrey);
+    height: 6vh;
 
     .chat_img
     {
@@ -333,15 +337,19 @@ img
                 color: var(--zap-secondarygrey);
             }
         }
+    }
 
-        .chat_options
+    .chat_options
+    {
+
+        span
         {
-            & i 
-            {
-                color: var(--zap-secondarygrey);
-            }
-            
+            color: var(--zap-secondarygrey);
+            padding: 0.5em;
+            font-size: 1.5em;
+            /* text-align: center; */
         }
+    
     }
 }
 
@@ -350,6 +358,8 @@ img
     flex-direction: column;
     justify-content: center;
     padding: 3em;
+    background-image: url("../img/mine.jpg");
+    background-repeat: repeat;
 }
 
 .mine_message
@@ -376,6 +386,42 @@ img
     align-self: flex-start;
 }
 
+.chat_footer
+{
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5em 1em;
+    background-color: var(--zap-primarygrey);
+    height: 6vh;
+
+    .emote,
+    .microphone
+    {
+        font-size: 1.5em;
+        color: var(--zap-secondarygrey);
+    }
+
+    .type_here
+    {
+        flex-basis: 80%;
+        /* border-style: none; */
+
+        ::placeholder
+        {
+            /* height: 1em; */
+            color: var(--zap-secondarygrey);
+        }
+
+        .type_msg
+        {
+            border-style: none;
+            padding: 1em;
+            border-radius: 10px;
+            width: 100%;
+            font-size: 1em;
+        }
+    }
+}
 
 /* #endregion RightApp */
 
@@ -455,6 +501,18 @@ img
     .chat
     {
         flex-basis: auto;
+    }
+
+    .chat_options,
+    .emote,
+    .microphone
+    {
+        display: none;
+    }
+
+    .type_msg
+    {
+        width: 100%;
     }
 }
 
