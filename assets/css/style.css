@@ -121,7 +121,7 @@ img
 .row
 {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 0.5em;
 }
 
@@ -282,9 +282,17 @@ img
         width: 100%;
     }
 
+    .col
+    {
+        /* max-width: 100px;
+        aspect-ratio: 1;
+        align-self: flex-end; */
+    }
+
     .col_11_m
     {
         width: 95%;
+        
     }
 
     .col_1_m
@@ -314,6 +322,11 @@ img
         .contact_info
         {
             display: none;
+        }
+
+        .enemy_list 
+        {
+            max-width: 80px;
         }
 
     }
