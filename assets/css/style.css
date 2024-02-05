@@ -1,0 +1,51 @@
+/* #region Common */
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: "Lato", sans-serif;
+}
+
+/* #endregion Common */
+
+/* #region Debug */
+
+/* #endregion Debug */
+
+/* #region Utilities */
+
+:root
+{
+    --zap-backgreen: #009688FF;
+    --zap-backgrey: #dcdbd3FF;
+    --zap-notify: #8edafcFF;
+    --zap-primarygrey: #eaeaeaFF;
+    --zap-secondarygrey: #b1b1b1FF;
+    --zap-darker: #000000FF;
+    --zap-lighter: #ffffffFF;
+    --zap-mymessage: #d5f9baFF;
+}
+
+/* #endregion Utilities */
+
+/* #region Header */
+
+/* #endregion Header */
+
+/* #region Main */
+
+/* #endregion Main */
+
+/* #region Footer */
+
+/* #endregion Footer */
+
+/* #region MediaQuery */
+
+/* #endregion MediaQuery */
