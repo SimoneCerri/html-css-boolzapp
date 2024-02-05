@@ -510,9 +510,9 @@ img
         display: none;
     }
 
-    .type_msg
+    .chat_footer
     {
-        width: 100%;
+       display: block;
     }
 }
 
