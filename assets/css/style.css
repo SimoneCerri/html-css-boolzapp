@@ -10,6 +10,8 @@
 body
 {
     font-family: "Lato", sans-serif;
+    background-image: linear-gradient( var(--zap-backgreen) 100px , var(--zap-backgrey) 0);
+    background-repeat: no-repeat;
 }
 
 img
@@ -158,6 +160,30 @@ img
 
 /* #region LeftApp */
 
+.enemy_list
+{
+    .row 
+    {
+        .col
+        {
+            .mine_contact
+            {
+                align-items: center;
+                justify-content: space-between;
+                .contact_img
+                {
+                    
+                }
+                img
+                {
+                border-radius: 50%;
+                max-width: 100px;
+                } 
+            }
+        }
+    }
+}
+
 /* #endregion LeftApp */
 
 
@@ -180,7 +206,7 @@ img
 
 .mine_message
 {
-    
+    background-color: var(--zap-mymessage);
     align-self: flex-end;
     border-radius: 20px;
     width: 50%;
@@ -194,6 +220,7 @@ img
 
 .enemy_message
 {
+    background-color: var(--zap-lighter);
     border-radius: 20px;
     padding: 1em;
     width: 50%;
@@ -206,17 +233,32 @@ img
 
 
 /* #region MediaQuery */
-@media screen and (max-width:1200px)
-{
 
+@media screen and (max-width:991px)
+{
+    .container
+    {
+        width: 100%;
+    }
+
+    body
+    {
+        background-image: none;
+        /* height: 0; */
+        /* background: none; */
+        /* background: repeat 0; */
+        /* background-image: unset; */
+        /* margin: 0; */
+    }
+
+    #main_app
+    {
+        /* margin: 0;
+        box-sizing: border-box; */
+    }
 }
 
-@media screen and (max-width:992px)
-{
-
-}
-
-@media screen and (max-width:768px)
+@media screen and (max-width:540px)
 {
     
 }
