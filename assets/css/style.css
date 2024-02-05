@@ -202,6 +202,8 @@ img
 .chat_main
 {
     flex-direction: column;
+    justify-content: center;
+    padding: 3em;
 }
 
 .mine_message
@@ -211,6 +213,7 @@ img
     border-radius: 20px;
     width: 50%;
     padding: 1em;
+    margin-bottom: 1em;
     & > p
     {
         /* display: block; */
@@ -255,12 +258,34 @@ img
     {
         /* margin: 0;
         box-sizing: border-box; */
+        .contact_info,
+        .notify,
+        .notify_info,
+        .search_bar,
+        .contact_info
+        {
+            display: none;
+        }
+
     }
 }
 
 @media screen and (max-width:540px)
 {
-    
+    .enemy_list
+    {
+        display: none;
+    }
+
+    .col_12_s
+    {
+        width: calc((100% / 12) * 12 - 1rem);
+    }
+
+    .chat
+    {
+        flex-basis: auto;
+    }
 }
 
 /* #endregion MediaQuery */
