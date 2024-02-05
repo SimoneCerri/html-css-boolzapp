@@ -184,10 +184,7 @@ img
                 background-color: var(--zap-primarygrey);
                 padding: 0.5em 1em;
                 height: 6vh;
-                .contact_img
-                {
-                    
-                }
+                
                 img
                 {
                 border-radius: 50%;
@@ -370,11 +367,7 @@ img
     width: 50%;
     padding: 1em;
     margin-bottom: 1em;
-    & > p
-    {
-        /* display: block; */
-          
-    }
+    
 }
 
 .enemy_message
@@ -433,13 +426,6 @@ img
     .container
     {
         width: 100%;
-    }
-
-    .col
-    {
-        /* max-width: 100px;
-        aspect-ratio: 1;
-        align-self: flex-end; */
     }
 
     .col_11_m
