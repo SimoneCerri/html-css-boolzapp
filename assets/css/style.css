@@ -35,6 +35,14 @@ img
     height: 90vh;
 } */
 
+.chat,
+.enemy_list
+{
+    max-height: 600px;
+    overflow: scroll;
+}
+
+
 /* #endregion Common */
 
 
