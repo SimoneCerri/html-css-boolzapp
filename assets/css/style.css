@@ -375,27 +375,46 @@ img
     background-image: url("../img/mine.jpg");
     background-repeat: repeat;
     height: calc(100% - 140px);
+
+    .mine_message
+    {
+        background-color: var(--zap-mymessage);
+        align-self: flex-end;
+        border-radius: 20px;
+        width: 60%;
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+
+    .enemy_message
+    {
+        background-color: var(--zap-lighter);
+        border-radius: 20px;
+        padding: 1em;
+        width: 60%;
+        align-self: flex-start;
+        margin-bottom: 1em;
+    }
 }
 
-.mine_message
+.text_info
 {
-    background-color: var(--zap-mymessage);
-    align-self: flex-end;
-    border-radius: 20px;
-    width: 50%;
-    padding: 1em;
-    margin-bottom: 1em;
-    
+    flex-direction: column;
+    justify-content: space-between;
+
+    .check
+    {
+        align-self: flex-end;
+        color: var(--zap-secondarygrey);
+    }
+
+    .msg_hours
+    {
+        color: var(--zap-secondarygrey);
+    }
 }
 
-.enemy_message
-{
-    background-color: var(--zap-lighter);
-    border-radius: 20px;
-    padding: 1em;
-    width: 50%;
-    align-self: flex-start;
-}
+
 
 .chat_footer
 {
