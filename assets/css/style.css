@@ -488,6 +488,10 @@ img
         }
 
     }
+    .all_enemy_are_the_same
+    {
+        height: calc(100% - 70px);
+    }
 }
 
 @media screen and (max-width:540px)
