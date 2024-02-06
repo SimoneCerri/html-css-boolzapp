@@ -370,8 +370,8 @@ img
 .chat_main
 {
     flex-direction: column;
-    justify-content: center;
-    padding: 3em;
+    /* justify-content: center; */
+    padding: 1em;
     background-image: url("../img/mine.jpg");
     background-repeat: repeat;
     height: calc(100% - 140px);
