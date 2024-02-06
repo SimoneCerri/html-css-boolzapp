@@ -12,7 +12,7 @@ body
     font-family: "Lato", sans-serif;
     background-image: linear-gradient( var(--zap-backgreen) 100px , var(--zap-backgrey) 0);
     background-repeat: no-repeat;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 img
@@ -27,33 +27,17 @@ img
     padding-top: 3em;
 }
 
-/* .enemy_list,
-.chat,
-.row,
+.all_enemy_are_the_same,
 .chat_main
 {
-    height: 90vh;
-} */
-
-.chat,
-.enemy_list
-{
-    max-height: 60vh;
     overflow: scroll;
 }
 
-.chat_main
+.enemy_list,
+.chat
 {
-    height: 90vh;
+    height: 100%;
 }
-
-.mine_contact,
-.chat_header
-{
-    /* position: fixed; */
-    /* width: fit-content; */
-}
-
 /* #endregion Common */
 
 
@@ -213,7 +197,7 @@ img
                 justify-content: space-between;
                 background-color: var(--zap-primarygrey);
                 padding: 0.5em 1em;
-                height: 6vh;
+                height: 70px;
                 
                 img
                 {
@@ -225,6 +209,7 @@ img
             {
                 color: var(--zap-secondarygrey);
                 font-size: 1.5em;
+                /* height: 70px; */
                 & i
                 {
                     padding: 0.5em;
@@ -235,6 +220,8 @@ img
                 background-color: var(--zap-notify);
                 padding: 0.5em 1em;
                 overflow-x: inherit;
+                height: 70px;
+
                 .notify_img
                 {
                     font-size: 1.5em;
@@ -261,6 +248,8 @@ img
                 display: flex;
                 padding: 0.4em;
                 background-color: var(--zap-primarygrey);
+                height: 40px;
+
                 i
                 {
                     color: var(--zap-secondarygrey);
@@ -318,6 +307,10 @@ img
     }
 }
 
+.all_enemy_are_the_same
+{
+    height: calc(100%-180px);
+}
 /* #endregion LeftApp */
 
 
@@ -329,7 +322,7 @@ img
     align-items: center;
     padding: 0.5em 1em;
     background-color: var(--zap-primarygrey);
-    height: 6vh;
+    height: 70px;
 
     .chat_img
     {
@@ -377,6 +370,7 @@ img
     padding: 3em;
     background-image: url("../img/mine.jpg");
     background-repeat: repeat;
+    height: calc(100% - 140px);
 }
 
 .mine_message
@@ -405,7 +399,7 @@ img
     align-items: center;
     padding: 0.5em 1em;
     background-color: var(--zap-primarygrey);
-    height: 6vh;
+    height: 70px;
 
     .emote,
     .microphone
