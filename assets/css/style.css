@@ -414,6 +414,36 @@ img
     }
 }
 
+.secret_option
+{
+    display: none;
+    list-style: none;
+    background-color: var(--zap-primarygrey);
+    box-shadow: 0 0 0 5px var(--zap-secondarygrey);
+
+    li 
+    {
+        /* border: 1px solid var(--zap-secondarygrey); */
+        text-align: center;
+        a
+        {
+            text-decoration: none;
+            color: rgb(138, 18, 18);
+            /* text-overflow: clip; */
+            white-space: nowrap;
+            padding: 3em 0.5em;
+            
+        }
+    } 
+}
+
+.check:hover
+{
+    .secret_option
+    {
+        display: block;
+    }
+}
 
 
 .chat_footer
