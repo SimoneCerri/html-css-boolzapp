@@ -33,7 +33,7 @@ img
 .all_enemy_are_the_same,
 .chat_main
 {
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .enemy_list,
@@ -401,6 +401,7 @@ img
 {
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 
     .check
     {
@@ -419,19 +420,24 @@ img
     display: none;
     list-style: none;
     background-color: var(--zap-primarygrey);
-    box-shadow: 0 0 0 5px var(--zap-secondarygrey);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: absolute;
+    right: 50%;
 
     li 
     {
         /* border: 1px solid var(--zap-secondarygrey); */
         text-align: center;
+        padding: 0.5em 0.5em;
+        border-bottom: 1px solid var(--zap-secondarygrey);
+
         a
         {
             text-decoration: none;
             color: rgb(138, 18, 18);
             /* text-overflow: clip; */
             white-space: nowrap;
-            padding: 3em 0.5em;
+            
             
         }
     } 
